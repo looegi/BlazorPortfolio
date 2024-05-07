@@ -1,0 +1,40 @@
+﻿@using LandingPageRazden.Components
+
+@page "/Portfolio"
+<CustomCardContainer Cards="@CardList" />
+
+@code {
+    List<CustomCardContainer.CardData> CardList = new List<CustomCardContainer.CardData>
+    {
+        new CustomCardContainer.CardData
+        {
+            Name = "Break-even Calculator",
+            Description = "Real estate calculation tool created with Angular and Angular Materials.",
+            Url = "https://real-estate-e14e0.web.app/"
+        },
+        new CustomCardContainer.CardData
+        {
+            Name = "Weather-app",
+            Description = "Simple mobile app using openweather API.",
+            Url = "https://weatherapp-51d71.web.app/"
+        },
+        new CustomCardContainer.CardData
+        {
+            Name = "Issue tracker",
+            Description = "A demo of an issue tracker.",
+            Url = "https://issue-tracker-luisc.web.app"
+        },
+        new CustomCardContainer.CardData
+                {
+            Name = "PySnake",
+            Description = "A Snake style game.",
+            Url = "/pysnake"
+        },
+        new CustomCardContainer.CardData
+                {
+            Name = "Github Portfolio",
+            Description = "A portfolio of my Github projects.",
+            Url = "https://issue-tracker-luisc.web.app"
+        }
+    };
+}

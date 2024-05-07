@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34714.143
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LandingPageRazden", "LandingPageRazden\LandingPageRazden\LandingPageRazden.csproj", "{09BBB2E4-A28A-44C2-8A6B-4D74F9B1F1F9}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LandingPageRazden.Client", "LandingPageRazden\LandingPageRazden.Client\LandingPageRazden.Client.csproj", "{9690DD7D-DDAE-4EF0-8235-D7FE8DB022EE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{09BBB2E4-A28A-44C2-8A6B-4D74F9B1F1F9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{09BBB2E4-A28A-44C2-8A6B-4D74F9B1F1F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{09BBB2E4-A28A-44C2-8A6B-4D74F9B1F1F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{09BBB2E4-A28A-44C2-8A6B-4D74F9B1F1F9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9690DD7D-DDAE-4EF0-8235-D7FE8DB022EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9690DD7D-DDAE-4EF0-8235-D7FE8DB022EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9690DD7D-DDAE-4EF0-8235-D7FE8DB022EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9690DD7D-DDAE-4EF0-8235-D7FE8DB022EE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1B57858A-90F8-4FF3-A629-3D1E0B09D7C3}
+	EndGlobalSection
+EndGlobal

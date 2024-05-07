@@ -1,0 +1,43 @@
+﻿@using NavbarInterface.INavItem
+@using System;
+@using System.Collections.Generic;
+
+
+
+<nav>
+    <div class="navbar-container">
+        <li class="navbar-menu">
+        @foreach (var item in navItems.OrderBy(n => n.OrderNum))
+        {
+            @if (item.OrderNum == 0) {
+                    <a class="nav-link move-left" href="@item.Link">@item.Name</a>
+                }
+                else{
+                <a class="nav-link" href="@item.Link">@item.Name</a>
+                }
+            
+        }
+        </li>
+    </div>
+
+</nav>
+
+
+
+@code{
+    public class NavItem : INavItem
+    {
+        public string Name { get; set; }
+        public string Link { get; set; }
+        public int OrderNum { get; set; }
+    }
+    int navOrder = 0; 
+    List<NavItem> navItems = new List<NavItem>();
+    protected override void OnInitialized()
+    {
+        // Initialize navItems in the OnInitialized lifecycle method
+        navItems.Add(new NavItem { Name = "Luis Ceballos", Link = "/", OrderNum = navOrder++ });
+        navItems.Add(new NavItem { Name = "Portfolio", Link = "/Portfolio", OrderNum = navOrder++ });
+        navItems.Add(new NavItem { Name = "Contact", Link = "mailto:lceb91@gmail.com", OrderNum = navOrder++ });
+    }
+}
