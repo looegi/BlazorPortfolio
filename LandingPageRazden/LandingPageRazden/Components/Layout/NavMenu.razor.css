@@ -1,25 +1,41 @@
 .navbar-container {
     backdrop-filter: blur(5px); /* Apply blur effect to the background */
-    background-color: rgba(128, 128, 128, 0); /* Add transparency to the background */
-    height: 100px;
+    background-color: rgba(128, 128, 128, .1); /* Add transparency to the background */
+    height: 50px;
     align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
 }
 
+    .navbar-container:hover {
+        backdrop-filter: blur(5px); /* Apply blur effect to the background */
+        background-color: rgba(128, 128, 128, .2); /* Add transparency to the background */
+    }
 
 .navbar-menu {
     display: flex;
     justify-content: flex-end;
     flex-direction: row;
-
 }
 
 .nav-link {
-    color: dimgrey;
-    font-size: large;   
-
+    color: rgb(84, 73, 55);
+    font-size: large;
+    margin-top: 2px;
+    margin-right: 3px;
+    margin: 3px;
+    border-radius: 6px;
 }
+
+    .nav-link:hover {
+        color: rgba(84, 73, 55,9);
+        background-color: rgba(128, 128, 128, .4); /* Add transparency to the background */
+        border: thin solid gray;
+
+    }
 
 .move-left {
     margin-right: auto;
 }
-

@@ -1,0 +1,18 @@
+﻿.card {
+    color: rgb(37, 44, 11);
+ 
+    margin-bottom: 10px;
+    backdrop-filter: blur(5px); /* Apply blur effect to the background */
+    background-color: rgb(255,255,255, 0.50); /* Add transparency to the background */
+}
+
+.p-btn {
+    color: white;
+    background-color: rgb(84, 73, 55);
+    border-color: black;
+}
+
+    .p-btn:hover {
+        background-color: rgba(84, 73, 55, .7);
+        ;
+    }

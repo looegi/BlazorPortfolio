@@ -1,8 +1,9 @@
 ﻿@using LandingPageRazden.Components
 
 @page "/Portfolio"
+<div class="portfolio-layout">
 <CustomCardContainer Cards="@CardList" />
-
+</div>
 @code {
     List<CustomCardContainer.CardData> CardList = new List<CustomCardContainer.CardData>
     {
@@ -38,3 +39,4 @@
         }
     };
 }
+
